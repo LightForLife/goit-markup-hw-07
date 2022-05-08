@@ -91,6 +91,26 @@ img {
   margin: -1px;
 }
 
+.btn {
+  min-width: 200px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+
+  border: none;
+  color: var(--first-bg-coor);
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color var(--timing-function);
+}
+
 /* -----------------------Header----------------------- */
 
 .header {
@@ -533,26 +553,6 @@ img {
   align-items: center;
 }
 
-.btn {
-  min-width: 200px;
-  height: 50px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  cursor: pointer;
-
-  border: none;
-  color: var(--first-bg-coor);
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: background-color var(--timing-function);
-}
-
 .hero__btn:hover,
 .hero__btn:focus {
   background-color: #188ce8;
@@ -564,12 +564,12 @@ img {
   margin-left: -30px;
 }
 
-.features-item {
+.features-card {
   width: calc(100% / 4 - 30px);
   margin-left: var(--main-flex-gap);
 }
 
-.features-box-icon {
+.features-card__image {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,7 +581,7 @@ img {
   margin-bottom: 30px;
 }
 
-.features-title {
+.features-card__title {
   margin-bottom: var(--title-first-gap);
 
   font-weight: 700;
@@ -592,7 +592,7 @@ img {
   color: var(--features-title-color);
 }
 
-.features-text {
+.features-card__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -604,26 +604,26 @@ img {
   padding-top: 0;
 }
 
-.service-item {
+.service-title {
+  margin-bottom: 50px;
+}
+
+.service-list__item {
   position: relative;
 }
 
-.service-label {
+.service-list__label {
   position: absolute;
   width: 100%;
   bottom: 0;
   left: 0;
 }
 
-.service-title {
-  margin-bottom: 50px;
-}
-
 .service-list {
   display: flex;
 }
 
-.service-text {
+.service-list__text {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,7 +641,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.service-item + .service-item {
+.service-list__item + .service-list__item {
   margin-left: var(--main-flex-gap);
 }
 /* ----------------------Team---------------------- */
